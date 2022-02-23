@@ -1,0 +1,4660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="l systemtitle">Proc Contents of NYS CDC BRFSS 2015 Dataset</td>
+</tr>
+</table><br>
+<div>
+<div align="left">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.XX">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">VARNUM</th>
+<th class="l header" scope="col">NAME</th>
+<th class="r header" scope="col">TYPE</th>
+<th class="l header" scope="col">LABEL</th>
+<th class="l header" scope="col">FORMAT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">325</td>
+<td class="l data">ACTIN11_</td>
+<td class="r data">Num</td>
+<td class="l data">ESTIMATED ACTIVITY INTENSITY FOR FIRST ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">326</td>
+<td class="l data">ACTIN21_</td>
+<td class="r data">Num</td>
+<td class="l data">ESTIMATED ACTIVITY INTENSITY FOR SECOND ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">60</td>
+<td class="l data">ADDEPEV2</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse, or other health professional ever told you have a depressive disorder (including depression, major depression, dysthymia, or minor depression)?</td>
+<td class="l data">AD2DEPEV</td>
+</tr>
+<tr>
+<td class="r data">176</td>
+<td class="l data">ADHISPA</td>
+<td class="r data">Num</td>
+<td class="l data">ADULT HISPANIC RESPONSE</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">175</td>
+<td class="l data">ADLTCHLD</td>
+<td class="r data">Num</td>
+<td class="l data">WHICH HOUSEHOLD MEMBER WAS SELECTED TO BE THE FOCUS OF THE CALLBACK.</td>
+<td class="l data">ADLTCHLD</td>
+</tr>
+<tr>
+<td class="r data">65</td>
+<td class="l data">AGE</td>
+<td class="r data">Num</td>
+<td class="l data">What is your age?</td>
+<td class="l data">AGE</td>
+</tr>
+<tr>
+<td class="r data">97</td>
+<td class="l data">ALCDAY5</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 30 days, how many days per week or per month did you have at least one drink of any alcoholic beverage such as beer, wine, a malt beverage or liquor?</td>
+<td class="l data">ALC5DAY</td>
+</tr>
+<tr>
+<td class="r data">116</td>
+<td class="l data">ARTHDIS2</td>
+<td class="r data">Num</td>
+<td class="l data">DOES ARTHRITIS AFFECT WHETHER YOU WORK</td>
+<td class="l data">ARTH2DIS</td>
+</tr>
+<tr>
+<td class="r data">156</td>
+<td class="l data">ARTHEDU</td>
+<td class="r data">Num</td>
+<td class="l data">EVER TAKEN CLASS IN MANAGING ARTHRITIS OR JOINT SYMPTOMS</td>
+<td class="l data">ARTHEDU</td>
+</tr>
+<tr>
+<td class="r data">155</td>
+<td class="l data">ARTHEXER</td>
+<td class="r data">Num</td>
+<td class="l data">DR. SUGGEST USE OF PHYSICAL ACTIVITY OR EXERCISE FOR ARTHRITIS OR JOINT SYMPTOMS</td>
+<td class="l data">ARTHEXER</td>
+</tr>
+<tr>
+<td class="r data">117</td>
+<td class="l data">ARTHSOCL</td>
+<td class="r data">Num</td>
+<td class="l data">SOCIAL ACTIVITIES LIMITED BECAUSE OF JOINT SYMPTOMS</td>
+<td class="l data">ARTHSOCL</td>
+</tr>
+<tr>
+<td class="r data">154</td>
+<td class="l data">ARTHWGT</td>
+<td class="r data">Num</td>
+<td class="l data">DR. SUGGEST LOSE WEIGHT FOR ARTHRITIS OR JOINT SYMPTOMS</td>
+<td class="l data">ARTHWGT</td>
+</tr>
+<tr>
+<td class="r data">153</td>
+<td class="l data">ARTTODAY</td>
+<td class="r data">Num</td>
+<td class="l data">WHAT CAN YOU DO BECAUSE OF ARTHRITIS OR JOINT SYMPTOMS</td>
+<td class="l data">ARTTODAY</td>
+</tr>
+<tr>
+<td class="r data">54</td>
+<td class="l data">ASTHMA3</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse, or other health professional ever told you had asthma?</td>
+<td class="l data">AST3HMA</td>
+</tr>
+<tr>
+<td class="r data">55</td>
+<td class="l data">ASTHNOW</td>
+<td class="r data">Num</td>
+<td class="l data">Do you still have asthma?</td>
+<td class="l data">ASTHNOW</td>
+</tr>
+<tr>
+<td class="r data">98</td>
+<td class="l data">AVEDRNK2</td>
+<td class="r data">Num</td>
+<td class="l data">One drink is equivalent to a 12 ounce beer, a 5 ounce glass of wine, or a drink with one shot of liquor.  During the past 30 days, on the days when you drank, about how many drinks did you drink on the average?</td>
+<td class="l data">AVE2DRNK</td>
+</tr>
+<tr>
+<td class="r data">304</td>
+<td class="l data">BEANDAY_</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED BEAN INTAKE IN TIMES PER DAY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">157</td>
+<td class="l data">BLDSTOOL</td>
+<td class="r data">Num</td>
+<td class="l data">EVER HAD BLOOD STOOL TEST USING HOME KIT</td>
+<td class="l data">BLDSTOOL</td>
+</tr>
+<tr>
+<td class="r data">130</td>
+<td class="l data">BLDSUGAR</td>
+<td class="r data">Num</td>
+<td class="l data">HOW OFTEN CHECK BLOOD FOR GLUCOSE</td>
+<td class="l data">BLDSUGAR</td>
+</tr>
+<tr>
+<td class="r data">87</td>
+<td class="l data">BLIND</td>
+<td class="r data">Num</td>
+<td class="l data">BLIND OR DIFFICULTY SEEING</td>
+<td class="l data">BLIND</td>
+</tr>
+<tr>
+<td class="r data">48</td>
+<td class="l data">BLOODCHO</td>
+<td class="r data">Num</td>
+<td class="l data">EVER HAD BLOOD CHOLESTEROL CHECKED</td>
+<td class="l data">BLOODCHO</td>
+</tr>
+<tr>
+<td class="r data">46</td>
+<td class="l data">BPHIGH4</td>
+<td class="r data">Num</td>
+<td class="l data">EVER TOLD BLOOD PRESSURE HIGH</td>
+<td class="l data">BP4HIGH</td>
+</tr>
+<tr>
+<td class="r data">47</td>
+<td class="l data">BPMEDS</td>
+<td class="r data">Num</td>
+<td class="l data">CURRENTLY TAKING BLOOD PRESSURE MEDICATION</td>
+<td class="l data">BPMEDS</td>
+</tr>
+<tr>
+<td class="r data">31</td>
+<td class="l data">CADULT</td>
+<td class="r data">Num</td>
+<td class="l data">ARE YOU 18 YEARS OF AGE OR OLDER?</td>
+<td class="l data">CADULT</td>
+</tr>
+<tr>
+<td class="r data">174</td>
+<td class="l data">CALLBACK</td>
+<td class="r data">Num</td>
+<td class="l data">ASTHMA FOLLOW-UP CALL BACK REQUEST</td>
+<td class="l data">CALLBACK</td>
+</tr>
+<tr>
+<td class="r data">138</td>
+<td class="l data">CAREGIV1</td>
+<td class="r data">Num</td>
+<td class="l data">PROVIDED REGULAR CARE FOR FAMILY OR FRIEND</td>
+<td class="l data">CARE1GIV</td>
+</tr>
+<tr>
+<td class="r data">365</td>
+<td class="l data">CARERCVD</td>
+<td class="r data">Num</td>
+<td class="l data">In general, how satisfied are you with the health care you received?</td>
+<td class="l data">CARERCVD</td>
+</tr>
+<tr>
+<td class="r data">172</td>
+<td class="l data">CASTHDX2</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse or other health professional ever said that the child has asthma?</td>
+<td class="l data">CASTH2DX</td>
+</tr>
+<tr>
+<td class="r data">173</td>
+<td class="l data">CASTHNO2</td>
+<td class="r data">Num</td>
+<td class="l data">Does the child still have asthma?</td>
+<td class="l data">CASTH2NO</td>
+</tr>
+<tr>
+<td class="r data">181</td>
+<td class="l data">CATI_RG</td>
+<td class="r data">Char</td>
+<td class="l data">CATI FIELD RESPONDENT GENDER</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">180</td>
+<td class="l data">CATI_RN</td>
+<td class="r data">Char</td>
+<td class="l data">CATI FIELD RESPONDENT NUMBER</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">182</td>
+<td class="l data">CATI_SR</td>
+<td class="r data">Char</td>
+<td class="l data">CATI FIELD SELECTED RESPONDENT</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">33</td>
+<td class="l data">CCLGHOUS</td>
+<td class="r data">Num</td>
+<td class="l data">DO YOU LIVE IN COLLEGE HOUSING?</td>
+<td class="l data">CCLGHOUS</td>
+</tr>
+<tr>
+<td class="r data">149</td>
+<td class="l data">CDASSIST</td>
+<td class="r data">Num</td>
+<td class="l data">NEED ASSISTANCE WITH DAY-TO_DAY ACTIVITIES DUE TO CONFUSION OR MEMORY LOSS</td>
+<td class="l data">CDASSIST</td>
+</tr>
+<tr>
+<td class="r data">152</td>
+<td class="l data">CDDISCUS</td>
+<td class="r data">Num</td>
+<td class="l data">HAVE YOU DISCUSSED YOUR CONFUSION OR MEMORY LOSS WITH A HEALTH CARE PROFESSIONAL?</td>
+<td class="l data">CDDISCUS</td>
+</tr>
+<tr>
+<td class="r data">150</td>
+<td class="l data">CDHELP</td>
+<td class="r data">Num</td>
+<td class="l data">WHEN YOU NEED HELP WITH DAY-TO-DAY ACTIVITIES ARE YOU ABLE TO GET IT</td>
+<td class="l data">CDHELP</td>
+</tr>
+<tr>
+<td class="r data">148</td>
+<td class="l data">CDHOUSE</td>
+<td class="r data">Num</td>
+<td class="l data">GIVEN UP DAY-TO-DAY CHORES DUE TO CONFUSION OR MEMORY LOSS</td>
+<td class="l data">CDHOUSE</td>
+</tr>
+<tr>
+<td class="r data">151</td>
+<td class="l data">CDSOCIAL</td>
+<td class="r data">Num</td>
+<td class="l data">DOES CONFUSION OR MEMORY LOSS INTERFERE WITH WORK OR SOCIAL ACTIVITIES</td>
+<td class="l data">CDSOCIAL</td>
+</tr>
+<tr>
+<td class="r data">30</td>
+<td class="l data">CELLFON2</td>
+<td class="r data">Num</td>
+<td class="l data">IS THIS A CELLULAR TELEPHONE?</td>
+<td class="l data">CELL2FON</td>
+</tr>
+<tr>
+<td class="r data">24</td>
+<td class="l data">CELLFON3</td>
+<td class="r data">Num</td>
+<td class="l data">CELLULAR TELEPHONE</td>
+<td class="l data">CELL3FON</td>
+</tr>
+<tr>
+<td class="r data">58</td>
+<td class="l data">CHCCOPD1</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse, or other health professional ever told you have (COPD) chronic obstructive pulmonary disease, emphysema or chronic bronchitis?</td>
+<td class="l data">CHC1COPD</td>
+</tr>
+<tr>
+<td class="r data">61</td>
+<td class="l data">CHCKIDNY</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse, or other health professional ever told you have kidney disease?  Do not include kidney stones, bladder infection or incontinence.</td>
+<td class="l data">CHCKIDNY</td>
+</tr>
+<tr>
+<td class="r data">57</td>
+<td class="l data">CHCOCNCR</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse, or other health professional ever told you had any other types of cancer?</td>
+<td class="l data">CHCOCNCR</td>
+</tr>
+<tr>
+<td class="r data">56</td>
+<td class="l data">CHCSCNCR</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse, or other health professional ever told you had skin cancer?</td>
+<td class="l data">CHCSCNCR</td>
+</tr>
+<tr>
+<td class="r data">45</td>
+<td class="l data">CHECKUP1</td>
+<td class="r data">Num</td>
+<td class="l data">About how long has it been since you last visited a doctor for a routine checkup?</td>
+<td class="l data">CHECK1UP</td>
+</tr>
+<tr>
+<td class="r data">177</td>
+<td class="l data">CHHISPA</td>
+<td class="r data">Num</td>
+<td class="l data">CHILD HISPANIC RESPONSE</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">213</td>
+<td class="l data">CHILDAGE</td>
+<td class="r data">Num</td>
+<td class="l data">CHILD AGE (IN MONTHS)</td>
+<td class="l data">CHILDAGE</td>
+</tr>
+<tr>
+<td class="r data">79</td>
+<td class="l data">CHILDREN</td>
+<td class="r data">Num</td>
+<td class="l data">How many children less than 18 years of age live in your household?</td>
+<td class="l data">CHILDREN</td>
+</tr>
+<tr>
+<td class="r data">133</td>
+<td class="l data">CHKHEMO3</td>
+<td class="r data">Num</td>
+<td class="l data">TIMES CHECKED FOR GLYCOSYLATED HEMOGLOBIN</td>
+<td class="l data">CHK3HEMO</td>
+</tr>
+<tr>
+<td class="r data">49</td>
+<td class="l data">CHOLCHK</td>
+<td class="r data">Num</td>
+<td class="l data">HOW LONG SINCE CHOLESTEROL CHECKED</td>
+<td class="l data">CHOLCHK</td>
+</tr>
+<tr>
+<td class="r data">147</td>
+<td class="l data">CIMEMLOS</td>
+<td class="r data">Num</td>
+<td class="l data">HAVE YOU EXPERIENCED CONFUSION OR MEMORY LOSS THAT IS HAPPENING MORE OFTEN OR IS GETTING WORSE?</td>
+<td class="l data">CIMEMLOS</td>
+</tr>
+<tr>
+<td class="r data">22</td>
+<td class="l data">COLGHOUS</td>
+<td class="r data">Num</td>
+<td class="l data">DO YOU LIVE IN COLLEGE HOUSING?</td>
+<td class="l data">COLGHOUS</td>
+</tr>
+<tr>
+<td class="r data">76</td>
+<td class="l data">CPDEMO1</td>
+<td class="r data">Num</td>
+<td class="l data">Do you have a cell phone for personal use?  Please include cell phones used for both business and personal use.</td>
+<td class="l data">CP1DEMO</td>
+</tr>
+<tr>
+<td class="r data">205</td>
+<td class="l data">CRACASC1</td>
+<td class="r data">Num</td>
+<td class="l data">CRACORG1 WITH RESPONSES IN ASCENDING ORDER</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">204</td>
+<td class="l data">CRACORG1</td>
+<td class="r data">Char</td>
+<td class="l data">RCSRACE1 WITH 77, 88, 80, 99S REMOVED</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">146</td>
+<td class="l data">CRGVEXPT</td>
+<td class="r data">Num</td>
+<td class="l data">DO YOU EXPECT TO HAVE A RELATIVE YOU WILL NEED TO PROVIDE CARE FOR?</td>
+<td class="l data">CRGVEXPT</td>
+</tr>
+<tr>
+<td class="r data">144</td>
+<td class="l data">CRGVHOUS</td>
+<td class="r data">Num</td>
+<td class="l data">MANAGED HOUSEHOLD TASKS</td>
+<td class="l data">CRGVHOUS</td>
+</tr>
+<tr>
+<td class="r data">141</td>
+<td class="l data">CRGVHRS1</td>
+<td class="r data">Num</td>
+<td class="l data">HOW MANY HOURS DO YOU PROVIDE CARE FOR PERSON?</td>
+<td class="l data">CRGV1HRS</td>
+</tr>
+<tr>
+<td class="r data">140</td>
+<td class="l data">CRGVLNG1</td>
+<td class="r data">Num</td>
+<td class="l data">HOW LONG PROVIDED CARE FOR PERSON.</td>
+<td class="l data">CRGV1LNG</td>
+</tr>
+<tr>
+<td class="r data">145</td>
+<td class="l data">CRGVMST2</td>
+<td class="r data">Num</td>
+<td class="l data">WHICH SUPPORT DO YOU MOST NEED THAT YOU ARE NOT GETTING?</td>
+<td class="l data">CRGV2MST</td>
+</tr>
+<tr>
+<td class="r data">143</td>
+<td class="l data">CRGVPERS</td>
+<td class="r data">Num</td>
+<td class="l data">MANAGED PERSONAL CARE</td>
+<td class="l data">CRGVPERS</td>
+</tr>
+<tr>
+<td class="r data">142</td>
+<td class="l data">CRGVPRB1</td>
+<td class="r data">Num</td>
+<td class="l data">WHAT IS THE MAJOR HEALTH PROBLEM, ILLNESS, DISABILITY FOR CARE FOR PERSON?</td>
+<td class="l data">CRGV1PRB</td>
+</tr>
+<tr>
+<td class="r data">139</td>
+<td class="l data">CRGVREL1</td>
+<td class="r data">Num</td>
+<td class="l data">RELATIONSHIP OF PERSON TO WHOM YOU ARE GIVING CARE?</td>
+<td class="l data">CRGV1REL</td>
+</tr>
+<tr>
+<td class="r data">34</td>
+<td class="l data">CSTATE</td>
+<td class="r data">Num</td>
+<td class="l data">ARE YOU A RESIDENT OF [STATE]?</td>
+<td class="l data">CSTATE</td>
+</tr>
+<tr>
+<td class="r data">20</td>
+<td class="l data">CTELENUM</td>
+<td class="r data">Num</td>
+<td class="l data">Correct Telephone Number</td>
+<td class="l data">CTELENUM</td>
+</tr>
+<tr>
+<td class="r data">29</td>
+<td class="l data">CTELNUM1</td>
+<td class="r data">Num</td>
+<td class="l data">CORRECT PHONE NUMBER?</td>
+<td class="l data">CTEL1NUM</td>
+</tr>
+<tr>
+<td class="r data">72</td>
+<td class="l data">CTYCODE1</td>
+<td class="r data">Num</td>
+<td class="l data">What county do you live in?</td>
+<td class="l data">CTYCODE1F</td>
+</tr>
+<tr>
+<td class="r data">52</td>
+<td class="l data">CVDCRHD4</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse, or other health professional ever told you that you had angina or coronary heart disease?</td>
+<td class="l data">CVD4CRHD</td>
+</tr>
+<tr>
+<td class="r data">51</td>
+<td class="l data">CVDINFR4</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse, or other health professional ever told you that you had a heart attack, also called a myocardial infarction?</td>
+<td class="l data">CVD4INFR</td>
+</tr>
+<tr>
+<td class="r data">53</td>
+<td class="l data">CVDSTRK3</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse, or other health professional ever told you had a stroke?</td>
+<td class="l data">CVD3STRK</td>
+</tr>
+<tr>
+<td class="r data">369</td>
+<td class="l data">DAYSRTRN</td>
+<td class="r data">Num</td>
+<td class="l data">How many days after your work-related injury were you able to return to work? (include weekends &amp; days off or vacation)</td>
+<td class="l data">DAYSRTRN</td>
+</tr>
+<tr>
+<td class="r data">88</td>
+<td class="l data">DECIDE</td>
+<td class="r data">Num</td>
+<td class="l data">DIFFICULTY CONCENTRATING OR REMEMBERING</td>
+<td class="l data">DECIDE</td>
+</tr>
+<tr>
+<td class="r data">360</td>
+<td class="l data">DELAYMED</td>
+<td class="r data">Num</td>
+<td class="l data">Have you delayed getting needed medical care for any of the following reasons in the past 12 months?</td>
+<td class="l data">DELAYMED</td>
+</tr>
+<tr>
+<td class="r data">63</td>
+<td class="l data">DIABAGE2</td>
+<td class="r data">Num</td>
+<td class="l data">AGE WHEN TOLD DIABETIC</td>
+<td class="l data">DIAB2AGE</td>
+</tr>
+<tr>
+<td class="r data">137</td>
+<td class="l data">DIABEDU</td>
+<td class="r data">Num</td>
+<td class="l data">EVER TAKEN CLASS IN MANAGING DIABETES</td>
+<td class="l data">DIABEDU</td>
+</tr>
+<tr>
+<td class="r data">62</td>
+<td class="l data">DIABETE3</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse, or other health professional ever told you have diabetes?</td>
+<td class="l data">DIA3BETE</td>
+</tr>
+<tr>
+<td class="r data">136</td>
+<td class="l data">DIABEYE</td>
+<td class="r data">Num</td>
+<td class="l data">EVER TOLD DIABETES HAS AFFECTED EYES</td>
+<td class="l data">DIABEYE</td>
+</tr>
+<tr>
+<td class="r data">91</td>
+<td class="l data">DIFFALON</td>
+<td class="r data">Num</td>
+<td class="l data">DIFFICULTY DOING ERRANDS ALONE</td>
+<td class="l data">DIFFALON</td>
+</tr>
+<tr>
+<td class="r data">90</td>
+<td class="l data">DIFFDRES</td>
+<td class="r data">Num</td>
+<td class="l data">DIFFICULTY DRESSING OR BATHING</td>
+<td class="l data">DIFFDRES</td>
+</tr>
+<tr>
+<td class="r data">398</td>
+<td class="l data">DIFFHEAR</td>
+<td class="r data">Num</td>
+<td class="l data">Do you have serious difficulty hearing or are you deaf?</td>
+<td class="l data">DIFFHEAR</td>
+</tr>
+<tr>
+<td class="r data">89</td>
+<td class="l data">DIFFWALK</td>
+<td class="r data">Num</td>
+<td class="l data">DIFFICULTY WALKING OR CLIMBING STAIRS</td>
+<td class="l data">DIFFWALK</td>
+</tr>
+<tr>
+<td class="r data">14</td>
+<td class="l data">DISPCODE</td>
+<td class="r data">Num</td>
+<td class="l data">Final Disposition</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">132</td>
+<td class="l data">DOCTDIAB</td>
+<td class="r data">Num</td>
+<td class="l data">TIMES SEEN HEALTH PROFESSIONAL FOR DIABETES</td>
+<td class="l data">DOCTDIAB</td>
+</tr>
+<tr>
+<td class="r data">99</td>
+<td class="l data">DRNK3GE5</td>
+<td class="r data">Num</td>
+<td class="l data">Considering all types of alcoholic beverages, how many times during the past 30 days did you have 5 or more drinks for men or 4 or more drinks for women on an occasion?</td>
+<td class="l data">DRNK35GE</td>
+</tr>
+<tr>
+<td class="r data">297</td>
+<td class="l data">DRNKANY5</td>
+<td class="r data">Num</td>
+<td class="l data">DRINK ANY ALCOHOLIC BEVERAGES IN PAST 30 DAYS</td>
+<td class="l data">DRNK5ANY</td>
+</tr>
+<tr>
+<td class="r data">298</td>
+<td class="l data">DROCDY3_</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED DRINK-OCCASIONS-PER-DAY</td>
+<td class="l data">DROCDY3_</td>
+</tr>
+<tr>
+<td class="r data">363</td>
+<td class="l data">DRVISITS</td>
+<td class="r data">Num</td>
+<td class="l data">How many times have you been to a doctor, nurse, or other health professional in the past 12 months?</td>
+<td class="l data">DRVISITS</td>
+</tr>
+<tr>
+<td class="r data">70</td>
+<td class="l data">EDUCA</td>
+<td class="r data">Num</td>
+<td class="l data">What is the highest grade or year of school you completed?</td>
+<td class="l data">EDUCA</td>
+</tr>
+<tr>
+<td class="r data">372</td>
+<td class="l data">EMPAWARE</td>
+<td class="r data">Num</td>
+<td class="l data">Was your employer aware of the work-related injury?</td>
+<td class="l data">EMPAWARE</td>
+</tr>
+<tr>
+<td class="r data">78</td>
+<td class="l data">EMPLOY1</td>
+<td class="r data">Num</td>
+<td class="l data">Are you currently.....?</td>
+<td class="l data">EMPLOY1F</td>
+</tr>
+<tr>
+<td class="r data">367</td>
+<td class="l data">EMPLSTYR</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 12 months, have you been employed for any period of time, either PT, FT or self-employed?</td>
+<td class="l data">EMPLSTYR</td>
+</tr>
+<tr>
+<td class="r data">183</td>
+<td class="l data">EXACTOT1</td>
+<td class="r data">Char</td>
+<td class="l data">FIRST ACTIVITY OTHER RESPONSE DESCRIPTION</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">184</td>
+<td class="l data">EXACTOT2</td>
+<td class="r data">Char</td>
+<td class="l data">SECOND ACTIVITY OTHER RESPONSE DESCRIPTION</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">107</td>
+<td class="l data">EXERANY2</td>
+<td class="r data">Num</td>
+<td class="l data">During the past month, other than your regular job, did you participate in any physical activities or exercises such as running, calisthenics, golf, gardening, or walking for exercise?</td>
+<td class="l data">EXER2ANY</td>
+</tr>
+<tr>
+<td class="r data">110</td>
+<td class="l data">EXERHMM1</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OR HOURS WALKING, RUNNING, JOGGING, OR SWIMMING</td>
+<td class="l data">EXER1HMM</td>
+</tr>
+<tr>
+<td class="r data">113</td>
+<td class="l data">EXERHMM2</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OR HOURS WALKING, RUNNING, JOGGING, OR SWIMMING</td>
+<td class="l data">EXER2HMM</td>
+</tr>
+<tr>
+<td class="r data">109</td>
+<td class="l data">EXEROFT1</td>
+<td class="r data">Num</td>
+<td class="l data">HOW MANY TIMES WALKING, RUNNING, JOGGING, OR SWIMMING</td>
+<td class="l data">EXER1OFT</td>
+</tr>
+<tr>
+<td class="r data">112</td>
+<td class="l data">EXEROFT2</td>
+<td class="r data">Num</td>
+<td class="l data">HOW MANY TIMES WALKING, RUNNING, JOGGING, OR SWIMMING</td>
+<td class="l data">EXER2OFT</td>
+</tr>
+<tr>
+<td class="r data">108</td>
+<td class="l data">EXRACT11</td>
+<td class="r data">Num</td>
+<td class="l data">TYPE OF PHYSICAL ACTIVITY</td>
+<td class="l data">EXR11ACT</td>
+</tr>
+<tr>
+<td class="r data">111</td>
+<td class="l data">EXRACT21</td>
+<td class="r data">Num</td>
+<td class="l data">OTHER TYPE OF PHYSICAL ACTIVITY GIVING MOST EXERCISE DURING PAST MONTH</td>
+<td class="l data">EXR21ACT</td>
+</tr>
+<tr>
+<td class="r data">135</td>
+<td class="l data">EYEEXAM</td>
+<td class="r data">Num</td>
+<td class="l data">LAST EYE EXAM WHERE PUPILS WERE DILATED</td>
+<td class="l data">EYEEXAM</td>
+</tr>
+<tr>
+<td class="r data">324</td>
+<td class="l data">FC60_</td>
+<td class="r data">Num</td>
+<td class="l data">ESTIMATED FUNCTIONAL CAPACITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">134</td>
+<td class="l data">FEETCHK</td>
+<td class="r data">Num</td>
+<td class="l data">TIMES FEET CHECK FOR SORES/IRRITATIONS</td>
+<td class="l data">FEETCHK</td>
+</tr>
+<tr>
+<td class="r data">131</td>
+<td class="l data">FEETCHK2</td>
+<td class="r data">Num</td>
+<td class="l data">HOW OFTEN CHECK FEET FOR SORES OR IRRITATIONS</td>
+<td class="l data">FEET2CHK</td>
+</tr>
+<tr>
+<td class="r data">121</td>
+<td class="l data">FLSHTMY2</td>
+<td class="r data">Num</td>
+<td class="l data">During what month and year did you receive your most recent flu shot injected into your arm or flu vaccine that was sprayed in your nose?</td>
+<td class="l data">FLSHT2MY</td>
+</tr>
+<tr>
+<td class="r data">120</td>
+<td class="l data">FLUSHOT6</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 12 months, have you had either a seasonal flu shot or a seasonal flu vaccine that was sprayed in your nose?</td>
+<td class="l data">FLU6SHOT</td>
+</tr>
+<tr>
+<td class="r data">8</td>
+<td class="l data">FMONTH</td>
+<td class="r data">Num</td>
+<td class="l data">File Month</td>
+<td class="l data">FMONTH</td>
+</tr>
+<tr>
+<td class="r data">102</td>
+<td class="l data">FRUIT1</td>
+<td class="r data">Num</td>
+<td class="l data">HOW MANY TIMES DID YOU EAT FRUIT?</td>
+<td class="l data">FRUIT1F</td>
+</tr>
+<tr>
+<td class="r data">101</td>
+<td class="l data">FRUITJU1</td>
+<td class="r data">Num</td>
+<td class="l data">HOW MANY TIMES DID YOU DRINK 100 PERCENT PURE FRUIT JUICES?</td>
+<td class="l data">FRUIT1JU</td>
+</tr>
+<tr>
+<td class="r data">399</td>
+<td class="l data">FRUITVEG</td>
+<td class="r data">Num</td>
+<td class="l data">When you or someone in your household shops for fresh fruits or vegetables, do you buy them in your community or neighborhood?</td>
+<td class="l data">FRUITVEF</td>
+</tr>
+<tr>
+<td class="r data">303</td>
+<td class="l data">FRUTDA1_</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED FRUIT INTAKE IN TIMES PER DAY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">302</td>
+<td class="l data">FTJUDA1_</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED FRUIT JUICE INTAKE IN TIMES PER DAY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">103</td>
+<td class="l data">FVBEANS</td>
+<td class="r data">Num</td>
+<td class="l data">HOW MANY TIMES DID YOU EAT BEANS OR LENTILS?</td>
+<td class="l data">FVBEANS</td>
+</tr>
+<tr>
+<td class="r data">104</td>
+<td class="l data">FVGREEN</td>
+<td class="r data">Num</td>
+<td class="l data">HOW MANY TIMES DID YOU EAT DARK GREEN VEGETABLES?</td>
+<td class="l data">FVGREEN</td>
+</tr>
+<tr>
+<td class="r data">105</td>
+<td class="l data">FVORANG</td>
+<td class="r data">Num</td>
+<td class="l data">HOW MANY TIMES DID YOU EAT ORANGE-COLORED VEGETABLES?</td>
+<td class="l data">FVORANG</td>
+</tr>
+<tr>
+<td class="r data">38</td>
+<td class="l data">GENHLTH</td>
+<td class="r data">Num</td>
+<td class="l data">Would you say that in general your health is</td>
+<td class="l data">GENHLTH</td>
+</tr>
+<tr>
+<td class="r data">305</td>
+<td class="l data">GRENDAY_</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED DARK GREEN VEGETABLE INTAKE IN TIMES PER DAY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">160</td>
+<td class="l data">HADSGCO1</td>
+<td class="r data">Num</td>
+<td class="l data">WAS LAST TEST A SIGMOIDOSCOPY OR COLONOSCOPY</td>
+<td class="l data">HAD1SGCO</td>
+</tr>
+<tr>
+<td class="r data">159</td>
+<td class="l data">HADSIGM3</td>
+<td class="r data">Num</td>
+<td class="l data">EVER HAD SIGMOIDOSCOPY/COLONOSCOPY</td>
+<td class="l data">HAD3SIGM</td>
+</tr>
+<tr>
+<td class="r data">59</td>
+<td class="l data">HAVARTH3</td>
+<td class="r data">Num</td>
+<td class="l data">Has a doctor, nurse, or other health professional ever told you have some form of arthritis, rheumatoid arthritis, gout, lupus, or fibromyalgia?</td>
+<td class="l data">HAV3ARTH</td>
+</tr>
+<tr>
+<td class="r data">385</td>
+<td class="l data">HCVHEAR</td>
+<td class="r data">Num</td>
+<td class="l data">Have you heard of hepatitis C?</td>
+<td class="l data">HCVHEAR</td>
+</tr>
+<tr>
+<td class="r data">390</td>
+<td class="l data">HCVINPTA</td>
+<td class="r data">Num</td>
+<td class="l data">Did you accept the HCV test that was offered by a medical care provider at the inpatient unit of a hospital?</td>
+<td class="l data">HCVINPTA</td>
+</tr>
+<tr>
+<td class="r data">389</td>
+<td class="l data">HCVINPTO</td>
+<td class="r data">Num</td>
+<td class="l data">Were you offered an HCV test while receiving care at an inpatient unit of a hospital?</td>
+<td class="l data">HCVINPTO</td>
+</tr>
+<tr>
+<td class="r data">388</td>
+<td class="l data">HCVINPTR</td>
+<td class="r data">Num</td>
+<td class="l data">In the past 12 months, have you received medical care at an inpatient unit of a hospital?</td>
+<td class="l data">HCVINPTR</td>
+</tr>
+<tr>
+<td class="r data">387</td>
+<td class="l data">HCVLASTT</td>
+<td class="r data">Num</td>
+<td class="l data">Not including blood donations, in what month and year was your last HCV test?</td>
+<td class="l data">HCVLASTT</td>
+</tr>
+<tr>
+<td class="r data">393</td>
+<td class="l data">HCVPRIMA</td>
+<td class="r data">Num</td>
+<td class="l data">Did you accept the HCV test that was offered by your primar care provider?</td>
+<td class="l data">HCVPRIMA</td>
+</tr>
+<tr>
+<td class="r data">392</td>
+<td class="l data">HCVPRIMO</td>
+<td class="r data">Num</td>
+<td class="l data">Were you offered an HCV test by your primary care provider?</td>
+<td class="l data">HCVPRIMO</td>
+</tr>
+<tr>
+<td class="r data">391</td>
+<td class="l data">HCVPRIMR</td>
+<td class="r data">Num</td>
+<td class="l data">In the past 12 months, have you received medical care from a primary care provider?</td>
+<td class="l data">HCVPRIMA</td>
+</tr>
+<tr>
+<td class="r data">386</td>
+<td class="l data">HCVTEST</td>
+<td class="r data">Num</td>
+<td class="l data">Have you ever been tested for hepatitis C (HCV)? Do not count tests you may have had as part of a blood donation.</td>
+<td class="l data">HCVTEST</td>
+</tr>
+<tr>
+<td class="r data">394</td>
+<td class="l data">HEALTHCL1</td>
+<td class="r data">Num</td>
+<td class="l data">You said that a medical professional has told you that you have or have had [a chronic illness]. During the last 12 months, have             you taken a course/class to teach you about how to manage problems related to (this/these) chronic illness(es)?</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">83</td>
+<td class="l data">HEIGHT3</td>
+<td class="r data">Num</td>
+<td class="l data">About how tall are you without shoes?</td>
+<td class="l data">HEIGHT</td>
+</tr>
+<tr>
+<td class="r data">37</td>
+<td class="l data">HHADULT</td>
+<td class="r data">Num</td>
+<td class="l data">NUMBER OF ADULTS IN HOUSEHOLD</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">66</td>
+<td class="l data">HISPANC3</td>
+<td class="r data">Char</td>
+<td class="l data">Are you Hispanic, Latino, or Spanish?</td>
+<td class="l data">$HISPANC3F</td>
+</tr>
+<tr>
+<td class="r data">124</td>
+<td class="l data">HIVTST6</td>
+<td class="r data">Num</td>
+<td class="l data">Have you ever been tested for HIV?  Do not count tests you may have had as part of a blood donation.  Include testing fluid from your mouth.</td>
+<td class="l data">HIV6TST</td>
+</tr>
+<tr>
+<td class="r data">125</td>
+<td class="l data">HIVTSTD3</td>
+<td class="r data">Num</td>
+<td class="l data">Not including blood donations, in what month and year was your last HIV test?</td>
+<td class="l data">HIV3TSTD</td>
+</tr>
+<tr>
+<td class="r data">359</td>
+<td class="l data">HLTHCVR1</td>
+<td class="r data">Num</td>
+<td class="l data">What is the primary source of your health care coverage?</td>
+<td class="l data">HLTHCVRGB</td>
+</tr>
+<tr>
+<td class="r data">42</td>
+<td class="l data">HLTHPLN1</td>
+<td class="r data">Num</td>
+<td class="l data">Do you have any kind of health care coverage, including health insurance, prepaid plans such as HMOs, or government plans such as Medicare?</td>
+<td class="l data">HLTH1PLN</td>
+</tr>
+<tr>
+<td class="r data">286</td>
+<td class="l data">HTIN4</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED HEIGHT IN INCHES</td>
+<td class="l data">HT4IN</td>
+</tr>
+<tr>
+<td class="r data">287</td>
+<td class="l data">HTM4</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED HEIGHT IN METERS</td>
+<td class="l data">HT4M</td>
+</tr>
+<tr>
+<td class="r data">9</td>
+<td class="l data">IDATE</td>
+<td class="r data">Char</td>
+<td class="l data">Interview Date</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">11</td>
+<td class="l data">IDAY</td>
+<td class="r data">Char</td>
+<td class="l data">Interview Day</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">122</td>
+<td class="l data">IMFVPLAC</td>
+<td class="r data">Num</td>
+<td class="l data">WHERE DID YOU GET YOUR LAST FLU SHOT/VACCINE?</td>
+<td class="l data">IMFVPLAC</td>
+</tr>
+<tr>
+<td class="r data">10</td>
+<td class="l data">IMONTH</td>
+<td class="r data">Char</td>
+<td class="l data">Interview Month</td>
+<td class="l data">$IMONTH</td>
+</tr>
+<tr>
+<td class="r data">80</td>
+<td class="l data">INCOME2</td>
+<td class="r data">Num</td>
+<td class="l data">Is your annual household income from all sources:</td>
+<td class="l data">IN2COME</td>
+</tr>
+<tr>
+<td class="r data">129</td>
+<td class="l data">INSULIN</td>
+<td class="r data">Num</td>
+<td class="l data">NOW TAKING INSULIN</td>
+<td class="l data">INSULIN</td>
+</tr>
+<tr>
+<td class="r data">81</td>
+<td class="l data">INTERNET</td>
+<td class="r data">Num</td>
+<td class="l data">INTERNET USE IN THE PAST 30 DAYS?</td>
+<td class="l data">INTERNET</td>
+</tr>
+<tr>
+<td class="r data">13</td>
+<td class="l data">INTVID</td>
+<td class="r data">Char</td>
+<td class="l data">Interviewer Identification</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">12</td>
+<td class="l data">IYEAR</td>
+<td class="r data">Char</td>
+<td class="l data">Interview Year</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">368</td>
+<td class="l data">JOBINJMT</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 12 months, were you injured seriously enough at your job that you received medical treatment from a doctor, nurse or other health care professional?</td>
+<td class="l data">JOBINJMT</td>
+</tr>
+<tr>
+<td class="r data">118</td>
+<td class="l data">JOINPAIN</td>
+<td class="r data">Num</td>
+<td class="l data">HOW BAD WAS JOINT PAIN</td>
+<td class="l data">JOINPAIN</td>
+</tr>
+<tr>
+<td class="r data">25</td>
+<td class="l data">LADULT</td>
+<td class="r data">Num</td>
+<td class="l data">ARE YOU 18 YEARS OF AGE OR OLDER?</td>
+<td class="l data">LADULT</td>
+</tr>
+<tr>
+<td class="r data">36</td>
+<td class="l data">LANDLINE</td>
+<td class="r data">Num</td>
+<td class="l data">DO YOU ALSO HAVE A LANDLINE TELEPHONE?</td>
+<td class="l data">LANDLINE</td>
+</tr>
+<tr>
+<td class="r data">396</td>
+<td class="l data">LASTDENT1</td>
+<td class="r data">Num</td>
+<td class="l data">How long has it been since you last visited a dentist or a dental clinic for any reason?</td>
+<td class="l data">LAST3DEN</td>
+</tr>
+<tr>
+<td class="r data">161</td>
+<td class="l data">LASTSIG3</td>
+<td class="r data">Num</td>
+<td class="l data">TIME SINCE LAST SIGMOIDOSCOPY/COLONOSCOPY</td>
+<td class="l data">LAST3SIG</td>
+</tr>
+<tr>
+<td class="r data">95</td>
+<td class="l data">LASTSMK2</td>
+<td class="r data">Num</td>
+<td class="l data">How long has it been since you last smoked a cigarette, even one or two puffs?</td>
+<td class="l data">LAST2SMK</td>
+</tr>
+<tr>
+<td class="r data">395</td>
+<td class="l data">LIFECHG</td>
+<td class="r data">Num</td>
+<td class="l data">Have you ever attended a lifestyle change program, such as the Diabetes Prevention Program, in order to improve your health or           prevent diabetes?</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">115</td>
+<td class="l data">LMTJOIN3</td>
+<td class="r data">Num</td>
+<td class="l data">LIMITED BECAUSE OF JOINT SYMPTOMS</td>
+<td class="l data">LMT3JOIN</td>
+</tr>
+<tr>
+<td class="r data">158</td>
+<td class="l data">LSTBLDS3</td>
+<td class="r data">Num</td>
+<td class="l data">TIME SINCE LAST BLOOD STOOL TEST</td>
+<td class="l data">LST3BLDS</td>
+</tr>
+<tr>
+<td class="r data">362</td>
+<td class="l data">LSTCOVRG</td>
+<td class="r data">Num</td>
+<td class="l data">About how long has it been since you last had health care coverage?</td>
+<td class="l data">LSTCOVRG</td>
+</tr>
+<tr>
+<td class="r data">69</td>
+<td class="l data">MARITAL</td>
+<td class="r data">Num</td>
+<td class="l data">Are you (marital status)</td>
+<td class="l data">MARITAL</td>
+</tr>
+<tr>
+<td class="r data">100</td>
+<td class="l data">MAXDRNKS</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 30 days, what is the largest number of drinks you had on any occasion?</td>
+<td class="l data">MAXDRNKS</td>
+</tr>
+<tr>
+<td class="r data">323</td>
+<td class="l data">MAXVO2_</td>
+<td class="r data">Num</td>
+<td class="l data">ESTIMATED AGE-GENDER SPECIFIC MAXIMUM OXYGEN CONSUMPTION</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">366</td>
+<td class="l data">MEDBILL1</td>
+<td class="r data">Num</td>
+<td class="l data">Do you currently have any health care bills that are being paid off over time?</td>
+<td class="l data">MEDBILLS</td>
+</tr>
+<tr>
+<td class="r data">44</td>
+<td class="l data">MEDCOST</td>
+<td class="r data">Num</td>
+<td class="l data">Was there a time in the past 12 months when you needed to see a doctor but could not because of cost?</td>
+<td class="l data">MEDCOST</td>
+</tr>
+<tr>
+<td class="r data">358</td>
+<td class="l data">MEDICARE</td>
+<td class="r data">Num</td>
+<td class="l data">Do you have Medicare?</td>
+<td class="l data">MEDICARE</td>
+</tr>
+<tr>
+<td class="r data">364</td>
+<td class="l data">MEDSCOST</td>
+<td class="r data">Num</td>
+<td class="l data">Was there a time in the past 12 months when you did not take your medication as prescribed because of cost? Do not include OTC</td>
+<td class="l data">MEDSCOST</td>
+</tr>
+<tr>
+<td class="r data">40</td>
+<td class="l data">MENTHLTH</td>
+<td class="r data">Num</td>
+<td class="l data">Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good?</td>
+<td class="l data">MENTHLTH</td>
+</tr>
+<tr>
+<td class="r data">321</td>
+<td class="l data">METVL11_</td>
+<td class="r data">Num</td>
+<td class="l data">ACTIVITY MET VALUE FOR FIRST ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">322</td>
+<td class="l data">METVL21_</td>
+<td class="r data">Num</td>
+<td class="l data">ACTIVITY MET VALUE FOR SECOND ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">376</td>
+<td class="l data">MISDEPRD</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 30 days, about how often did you feel so depressed that nothing could cheer you up?</td>
+<td class="l data">MISF</td>
+</tr>
+<tr>
+<td class="r data">377</td>
+<td class="l data">MISEFFRT</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 3 days, about how often did you feel that everything was an effort?</td>
+<td class="l data">MISF</td>
+</tr>
+<tr>
+<td class="r data">374</td>
+<td class="l data">MISHOPLS</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 30 days, about how often did you feel hopeless-all of time, most, some, a little, or none of the time?</td>
+<td class="l data">MISF</td>
+</tr>
+<tr>
+<td class="r data">373</td>
+<td class="l data">MISNERVS</td>
+<td class="r data">Num</td>
+<td class="l data">About how often during the past 30 days did you feel nervous-all of time, most, some, a little, or none of the time?</td>
+<td class="l data">MISF</td>
+</tr>
+<tr>
+<td class="r data">379</td>
+<td class="l data">MISNOWRK</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 30 days, for about how many days did a mental health condition or emotional problem keep you from            doing your work or other usual activities?</td>
+<td class="l data">MISNOWRK</td>
+</tr>
+<tr>
+<td class="r data">382</td>
+<td class="l data">MISPHLPF</td>
+<td class="r data">Num</td>
+<td class="l data">People are generally caring and sympathetic to people with mental illness. Do you - agree slightly or strongly, or disagree slightly or strongly?</td>
+<td class="l data">MISPHLPF</td>
+</tr>
+<tr>
+<td class="r data">375</td>
+<td class="l data">MISRSTLS</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 30 days, about how often did you feel restless or fidgety?</td>
+<td class="l data">MISF</td>
+</tr>
+<tr>
+<td class="r data">380</td>
+<td class="l data">MISTMNT</td>
+<td class="r data">Num</td>
+<td class="l data">Are you now taking medicine or receiving treatment from a doctor or other health professional for any type of mental           health condition or emotional problem?</td>
+<td class="l data">MISTMNT</td>
+</tr>
+<tr>
+<td class="r data">381</td>
+<td class="l data">MISTRHLP</td>
+<td class="r data">Num</td>
+<td class="l data">Treatment can help people with mental illness lead normal lives. Do you- agree slightly or strongly, or disagree slightly or strongly?</td>
+<td class="l data">MISF</td>
+</tr>
+<tr>
+<td class="r data">378</td>
+<td class="l data">MISWTLES</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 30 days, about how often did you feel worthless?</td>
+<td class="l data">MISF</td>
+</tr>
+<tr>
+<td class="r data">357</td>
+<td class="l data">MOSTKNOW</td>
+<td class="r data">Num</td>
+<td class="l data">ARE YOU THE PARENT OR GUARDIAN IN THE HOUSEHOLD WHO KNOWS THE MOST ABOUT (CHILD)’S ASTHMA?</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">273</td>
+<td class="l data">MRACASC1</td>
+<td class="r data">Num</td>
+<td class="l data">MRACEORG WITH RESPONSES IN ASCENDING ORDER CALCULATED VARIABLE</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">67</td>
+<td class="l data">MRACE1</td>
+<td class="r data">Char</td>
+<td class="l data">Which one or more of the following would you say is your race?</td>
+<td class="l data">$MRACE1F</td>
+</tr>
+<tr>
+<td class="r data">272</td>
+<td class="l data">MRACORG1</td>
+<td class="r data">Char</td>
+<td class="l data">MRACE WITH TRAILING 7,8,9S REMOVED CALCULATED VARIABLE</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">187</td>
+<td class="l data">MSCODE</td>
+<td class="r data">Num</td>
+<td class="l data">METROPOLITAN STATUS CODE</td>
+<td class="l data">MSCODE</td>
+</tr>
+<tr>
+<td class="r data">17</td>
+<td class="l data">NATTMPTS</td>
+<td class="r data">Num</td>
+<td class="l data">Number of Sample Records Selected from Stratum</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">361</td>
+<td class="l data">NOCOV121</td>
+<td class="r data">Num</td>
+<td class="l data">In the past 12 months was there any time when you did NOT have ANY health insurance or coverage?</td>
+<td class="l data">NO121COV</td>
+</tr>
+<tr>
+<td class="r data">400</td>
+<td class="l data">NOVEGFRU</td>
+<td class="r data">Num</td>
+<td class="l data">What is the main reason you or someone in your household does not buy fresh fruits and vegetables in your community or neighborhood?</td>
+<td class="l data">NOVEGFRU</td>
+</tr>
+<tr>
+<td class="r data">401</td>
+<td class="l data">NOVFOTHR</td>
+<td class="r data">Char</td>
+<td class="l data">Other reason for not buying F/V in community</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">18</td>
+<td class="l data">NRECSEL</td>
+<td class="r data">Num</td>
+<td class="l data">Number of Telephone Numbers in Stratum</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">19</td>
+<td class="l data">NRECSTR</td>
+<td class="r data">Num</td>
+<td class="l data">Number of Telephone Numbers in Stratum from Which Sample Was Selected</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">26</td>
+<td class="l data">NUMADULT</td>
+<td class="r data">Num</td>
+<td class="l data">Number of Adults in Household</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">74</td>
+<td class="l data">NUMHHOL2</td>
+<td class="r data">Num</td>
+<td class="l data">Do you have more than one telephone number in your household?  Do not include cell phones or numbers that are only used by a computer or fax machine.</td>
+<td class="l data">NUM2HHOL</td>
+</tr>
+<tr>
+<td class="r data">27</td>
+<td class="l data">NUMMEN</td>
+<td class="r data">Num</td>
+<td class="l data">Number of Adult Men in Household</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">75</td>
+<td class="l data">NUMPHON2</td>
+<td class="r data">Num</td>
+<td class="l data">How many of these telephone numbers are residential numbers?</td>
+<td class="l data">NUM2PHON</td>
+</tr>
+<tr>
+<td class="r data">28</td>
+<td class="l data">NUMWOMEN</td>
+<td class="r data">Num</td>
+<td class="l data">Number of Adult Women in Household</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">68</td>
+<td class="l data">ORACE3</td>
+<td class="r data">Num</td>
+<td class="l data">Which one of these groups would you say best represents your race?</td>
+<td class="l data">O3RACE</td>
+</tr>
+<tr>
+<td class="r data">220</td>
+<td class="l data">ORGSEQNO</td>
+<td class="r data">Char</td>
+<td class="l data">ORIGINAL STATE AND ORIGINAL SEQUENCE NUMBER</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">306</td>
+<td class="l data">ORNGDAY_</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED ORANGE-COLORED VEGETABLE INTAKE IN TIMES PER DAY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">371</td>
+<td class="l data">OTHRPAID</td>
+<td class="r data">Char</td>
+<td class="l data">Other source (paid medical treatment)</td>
+<td class="l data">$OTHRPAID</td>
+</tr>
+<tr>
+<td class="r data">202</td>
+<td class="l data">O_STATE</td>
+<td class="r data">Num</td>
+<td class="l data">ORIGINAL STATE THAT COLLECTED THE CELL PHONE DATA</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">337</td>
+<td class="l data">PA1MIN_</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OF TOTAL PHYSICAL ACTIVITY PER WEEK</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">340</td>
+<td class="l data">PA1VIGM_</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OF TOTAL VIGOROUS PHYSICAL ACTIVITY PER WEEK</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">327</td>
+<td class="l data">PADUR1_</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OF FIRST ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">328</td>
+<td class="l data">PADUR2_</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OF SECOND ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">329</td>
+<td class="l data">PAFREQ1_</td>
+<td class="r data">Num</td>
+<td class="l data">PHYSICAL ACTIVITY FREQUENCY PER WEEK FOR FIRST ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">330</td>
+<td class="l data">PAFREQ2_</td>
+<td class="r data">Num</td>
+<td class="l data">PHYSICAL ACTIVITY FREQUENCY PER WEEK FOR SECOND ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">335</td>
+<td class="l data">PAMIN11_</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OF PHYSICAL ACTIVITY PER WEEK FOR FIRST ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">336</td>
+<td class="l data">PAMIN21_</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OF PHYSICAL ACTIVITY PER WEEK FOR SECOND ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">334</td>
+<td class="l data">PAMISS1_</td>
+<td class="r data">Num</td>
+<td class="l data">MISSING PHYSICAL ACTIVITY DATA</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">338</td>
+<td class="l data">PAVIG11_</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OF VIGOROUS PHYSICAL ACTIVITY PER WEEK FOR FIRST ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">339</td>
+<td class="l data">PAVIG21_</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OF VIGOROUSPHYSICAL ACTIVITY PER WEEK FOR SECOND ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">127</td>
+<td class="l data">PDIABTST</td>
+<td class="r data">Num</td>
+<td class="l data">HAD A TEST FOR HIGH BLOOD SUGAR IN PAST THREE YEARS</td>
+<td class="l data">PDIABTST</td>
+</tr>
+<tr>
+<td class="r data">43</td>
+<td class="l data">PERSDOC2</td>
+<td class="r data">Num</td>
+<td class="l data">Do you have one person you think of as your personal doctor or health care provider?</td>
+<td class="l data">PERS2DOC</td>
+</tr>
+<tr>
+<td class="r data">39</td>
+<td class="l data">PHYSHLTH</td>
+<td class="r data">Num</td>
+<td class="l data">Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good?</td>
+<td class="l data">PHYSHLTH</td>
+</tr>
+<tr>
+<td class="r data">123</td>
+<td class="l data">PNEUVAC3</td>
+<td class="r data">Num</td>
+<td class="l data">A pneumonia shot or pneumococcal vaccine is usually given only once or twice in person&#39;s lifetime and is different from the flu shot.  Have you ever had a pneumonia shot?</td>
+<td class="l data">PNEU3VAC</td>
+</tr>
+<tr>
+<td class="r data">41</td>
+<td class="l data">POORHLTH</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 30 days, for about how many days did poor physical or mental health keep you from doing your usual activities, such as self-care, work, or recreation?</td>
+<td class="l data">POORHLTH</td>
+</tr>
+<tr>
+<td class="r data">406</td>
+<td class="l data">PPS_1</td>
+<td class="r data">Num</td>
+<td class="l data">Albany Medical Center Hospital</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">410</td>
+<td class="l data">PPS_14</td>
+<td class="r data">Num</td>
+<td class="l data">Nassau University Medical Center</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">411</td>
+<td class="l data">PPS_16</td>
+<td class="r data">Num</td>
+<td class="l data">Stony Brook University Hospital</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">412</td>
+<td class="l data">PPS_19</td>
+<td class="r data">Num</td>
+<td class="l data">Montefiore Medical Center</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">413</td>
+<td class="l data">PPS_20</td>
+<td class="r data">Num</td>
+<td class="l data">Refuah Health Center</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">414</td>
+<td class="l data">PPS_21</td>
+<td class="r data">Num</td>
+<td class="l data">Westchester Medical Center</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">415</td>
+<td class="l data">PPS_22</td>
+<td class="r data">Num</td>
+<td class="l data">Mohawk Valley PPS - Bassett</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">416</td>
+<td class="l data">PPS_23</td>
+<td class="r data">Num</td>
+<td class="l data">Adirondack Health Institute</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">417</td>
+<td class="l data">PPS_25</td>
+<td class="r data">Num</td>
+<td class="l data">Advocate Community Partners - AW Medical</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">418</td>
+<td class="l data">PPS_27</td>
+<td class="r data">Num</td>
+<td class="l data">Bronx-Lebanon Hospital Center</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">407</td>
+<td class="l data">PPS_3</td>
+<td class="r data">Num</td>
+<td class="l data">Ellis Hospital</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">419</td>
+<td class="l data">PPS_32</td>
+<td class="r data">Num</td>
+<td class="l data">Lutheran Medical Center</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">420</td>
+<td class="l data">PPS_33</td>
+<td class="r data">Num</td>
+<td class="l data">Maimonides Medical Center</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">421</td>
+<td class="l data">PPS_34</td>
+<td class="r data">Num</td>
+<td class="l data">Mount Sinai Hospitals Group</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">422</td>
+<td class="l data">PPS_36</td>
+<td class="r data">Num</td>
+<td class="l data">St Barnabas Hospital - dba SBH Health System</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">423</td>
+<td class="l data">PPS_39</td>
+<td class="r data">Num</td>
+<td class="l data">The New York and Presbyterian Hospital</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">424</td>
+<td class="l data">PPS_40</td>
+<td class="r data">Num</td>
+<td class="l data">The New York Hospital Medical Center of Queens</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">425</td>
+<td class="l data">PPS_43</td>
+<td class="r data">Num</td>
+<td class="l data">Richmond Univ Med Center &amp; Staten Island Univ Hosp</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">426</td>
+<td class="l data">PPS_44</td>
+<td class="r data">Num</td>
+<td class="l data">United Health Services Hospitals Inc</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">427</td>
+<td class="l data">PPS_45</td>
+<td class="r data">Num</td>
+<td class="l data">Samaritan Medical Center</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">428</td>
+<td class="l data">PPS_46</td>
+<td class="r data">Num</td>
+<td class="l data">Catholic Medical Partners-Accountable Care IPA INC</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">429</td>
+<td class="l data">PPS_48</td>
+<td class="r data">Num</td>
+<td class="l data">Millennium Collaborative Care PPS - ECMC</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">430</td>
+<td class="l data">PPS_52</td>
+<td class="r data">Num</td>
+<td class="l data">New York City Health and Hospitals-led PPS</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">408</td>
+<td class="l data">PPS_8</td>
+<td class="r data">Num</td>
+<td class="l data">CNY DSRIP Performing Provider System</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">409</td>
+<td class="l data">PPS_9</td>
+<td class="r data">Num</td>
+<td class="l data">Finger Lakes PPS</td>
+<td class="l data">YESNO</td>
+</tr>
+<tr>
+<td class="r data">4</td>
+<td class="l data">PRECALL</td>
+<td class="r data">Num</td>
+<td class="l data">Pre-Call Status Code</td>
+<td class="l data">PRECALL</td>
+</tr>
+<tr>
+<td class="r data">128</td>
+<td class="l data">PREDIAB1</td>
+<td class="r data">Num</td>
+<td class="l data">EVER BEEN TOLD YOU HAVE PRE-DIABETES OR BORDERLINE DIABETES</td>
+<td class="l data">PRE1DIAB</td>
+</tr>
+<tr>
+<td class="r data">84</td>
+<td class="l data">PREGNANT</td>
+<td class="r data">Num</td>
+<td class="l data">To your knowledge, are you now pregnant?</td>
+<td class="l data">PREGNANT</td>
+</tr>
+<tr>
+<td class="r data">21</td>
+<td class="l data">PVTRESD1</td>
+<td class="r data">Num</td>
+<td class="l data">PRIVATE RESIDENCE?</td>
+<td class="l data">PVT1RESD</td>
+</tr>
+<tr>
+<td class="r data">32</td>
+<td class="l data">PVTRESD2</td>
+<td class="r data">Num</td>
+<td class="l data">DO YOU LIVE IN A PRIVATE RESIDENCE?</td>
+<td class="l data">PVT2RESD</td>
+</tr>
+<tr>
+<td class="r data">85</td>
+<td class="l data">QLACTLM2</td>
+<td class="r data">Num</td>
+<td class="l data">Are you limited in any way in any activities because of physical, mental, or emotional problems?</td>
+<td class="l data">QL2ACTLM</td>
+</tr>
+<tr>
+<td class="r data">179</td>
+<td class="l data">QSTLANG</td>
+<td class="r data">Num</td>
+<td class="l data">LANGUAGE IDENTIFIER</td>
+<td class="l data">QSTLANG</td>
+</tr>
+<tr>
+<td class="r data">178</td>
+<td class="l data">QSTVER</td>
+<td class="r data">Num</td>
+<td class="l data">QUESTIONNAIRE VERSION IDENTIFIER</td>
+<td class="l data">QSTVERF</td>
+</tr>
+<tr>
+<td class="r data">168</td>
+<td class="l data">RCHISLA1</td>
+<td class="r data">Char</td>
+<td class="l data">Is the child Hispanic, Latino/a, or Spanish origin?</td>
+<td class="l data">$HISPANC3F</td>
+</tr>
+<tr>
+<td class="r data">166</td>
+<td class="l data">RCSBIRTH</td>
+<td class="r data">Char</td>
+<td class="l data">What is the birth month and year of the Xth child?</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">170</td>
+<td class="l data">RCSBRAC2</td>
+<td class="r data">Num</td>
+<td class="l data">RACE OF CHILD</td>
+<td class="l data">RCS2BRAC</td>
+</tr>
+<tr>
+<td class="r data">167</td>
+<td class="l data">RCSGENDR</td>
+<td class="r data">Num</td>
+<td class="l data">Is the child a boy or a girl?</td>
+<td class="l data">RCSGENDR</td>
+</tr>
+<tr>
+<td class="r data">169</td>
+<td class="l data">RCSRACE1</td>
+<td class="r data">Char</td>
+<td class="l data">Which one or more of the following would you say is the race of the child?</td>
+<td class="l data">$RCSRACE1F</td>
+</tr>
+<tr>
+<td class="r data">171</td>
+<td class="l data">RCSRLTN2</td>
+<td class="r data">Num</td>
+<td class="l data">How are you related to the child?</td>
+<td class="l data">RCS2RLTN</td>
+</tr>
+<tr>
+<td class="r data">405</td>
+<td class="l data">REGION</td>
+<td class="r data">Num</td>
+<td class="l data">NYC/ROS</td>
+<td class="l data">REGIONF</td>
+</tr>
+<tr>
+<td class="r data">71</td>
+<td class="l data">RENTHOM1</td>
+<td class="r data">Num</td>
+<td class="l data">Do you own or rent your home?</td>
+<td class="l data">RENT1HOM</td>
+</tr>
+<tr>
+<td class="r data">7</td>
+<td class="l data">REPDEPTH</td>
+<td class="r data">Num</td>
+<td class="l data">Replicate Depth</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">6</td>
+<td class="l data">REPNUM</td>
+<td class="r data">Num</td>
+<td class="l data">Replicate Number</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">397</td>
+<td class="l data">RMVTEETH1</td>
+<td class="r data">Num</td>
+<td class="l data">How many of your permanent teeth have been removed because of tooth decay or gum?</td>
+<td class="l data">RMVTETHF</td>
+</tr>
+<tr>
+<td class="r data">35</td>
+<td class="l data">RSPSTATE</td>
+<td class="r data">Num</td>
+<td class="l data">IN WHAT STATE DO YOU LIVE?</td>
+<td class="l data">RSPSTATE</td>
+</tr>
+<tr>
+<td class="r data">119</td>
+<td class="l data">SEATBELT</td>
+<td class="r data">Num</td>
+<td class="l data">How often do you use seat belts when you drive or ride in a car?  Would you say:</td>
+<td class="l data">SEATBELT</td>
+</tr>
+<tr>
+<td class="r data">5</td>
+<td class="l data">SECSCRFL</td>
+<td class="r data">Num</td>
+<td class="l data">SECONDARY SCREENING FLAGS</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">15</td>
+<td class="l data">SEQNO</td>
+<td class="r data">Num</td>
+<td class="l data">Annual Sequence Number</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">64</td>
+<td class="l data">SEX</td>
+<td class="r data">Num</td>
+<td class="l data">Sex of respondent.</td>
+<td class="l data">SEX</td>
+</tr>
+<tr>
+<td class="r data">93</td>
+<td class="l data">SMOKDAY2</td>
+<td class="r data">Num</td>
+<td class="l data">Do you now smoke cigarettes every day, some days or not at all?</td>
+<td class="l data">SMOK2DAY</td>
+</tr>
+<tr>
+<td class="r data">92</td>
+<td class="l data">SMOKE100</td>
+<td class="r data">Num</td>
+<td class="l data">Have you smoked at least 100 cigarettes in your entire life?</td>
+<td class="l data">SMOK100_</td>
+</tr>
+<tr>
+<td class="r data">384</td>
+<td class="l data">SSBFRUT2</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 30 days, how often did you drink sugar-sweetened fruit drinks(Kool-Aid and lemonade), sweet tea, sports or            energy drinks(Gatorade and Red Bull)? Do not include 100% fruit juice, diet drinks, artificial sweetened drinks.</td>
+<td class="l data">SSB2FRUT</td>
+</tr>
+<tr>
+<td class="r data">383</td>
+<td class="l data">SSBSUGR1</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 30 days, how often did you drink regular soda or pop that contains sugar? Do not include diet soda or diet pop.</td>
+<td class="l data">SSBSUGAR</td>
+</tr>
+<tr>
+<td class="r data">185</td>
+<td class="l data">STATEQUE</td>
+<td class="r data">Char</td>
+<td class="l data">STATE ADDED QUESTIONS</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">23</td>
+<td class="l data">STATERES</td>
+<td class="r data">Num</td>
+<td class="l data">RESIDENT OF STATE</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">94</td>
+<td class="l data">STOPSMK2</td>
+<td class="r data">Num</td>
+<td class="l data">During the past 12 months, have you stopped smoking for one day or longer because you were trying to quit smoking?</td>
+<td class="l data">STOP2SMK</td>
+</tr>
+<tr>
+<td class="r data">114</td>
+<td class="l data">STRENGTH</td>
+<td class="r data">Num</td>
+<td class="l data">HOW MANY TIMES DID YOU DO PHYSICAL ACTIVITIES OR EXERCISES TO STRENGTHEN YOUR MUSCLES?</td>
+<td class="l data">STRENGTH</td>
+</tr>
+<tr>
+<td class="r data">333</td>
+<td class="l data">STRFREQ_</td>
+<td class="r data">Num</td>
+<td class="l data">STRENGTH ACTIVITY FREQUENCY PER WEEK</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">403</td>
+<td class="l data">STRSMEAL</td>
+<td class="r data">Num</td>
+<td class="l data">How often in the past 12 months would you say you were worried or stressed about having enough money to buy nutritious meals?</td>
+<td class="l data">STRSMEAL</td>
+</tr>
+<tr>
+<td class="r data">402</td>
+<td class="l data">STRSRENT</td>
+<td class="r data">Num</td>
+<td class="l data">How often in the past 12 months would you say you were worried or stressed about having enough money to pay your rent/mortgage?</td>
+<td class="l data">STRSRENT</td>
+</tr>
+<tr>
+<td class="r data">164</td>
+<td class="l data">SXORIENT</td>
+<td class="r data">Num</td>
+<td class="l data">SEXUAL ORIENTATION OR GENDER IDENTITY</td>
+<td class="l data">SXORIENT</td>
+</tr>
+<tr>
+<td class="r data">50</td>
+<td class="l data">TOLDHI2</td>
+<td class="r data">Num</td>
+<td class="l data">EVER TOLD BLOOD CHOLESTEROL HIGH</td>
+<td class="l data">TOLD2HI</td>
+</tr>
+<tr>
+<td class="r data">165</td>
+<td class="l data">TRNSGNDR</td>
+<td class="r data">Num</td>
+<td class="l data">DO YOU CONSIDER YOURSELF TO BE TRANSGENDER?</td>
+<td class="l data">TRNSGNDR</td>
+</tr>
+<tr>
+<td class="r data">163</td>
+<td class="l data">TYPEINDS</td>
+<td class="r data">Char</td>
+<td class="l data">TYPE OF BUSINESS/INDUSTRY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">162</td>
+<td class="l data">TYPEWORK</td>
+<td class="r data">Char</td>
+<td class="l data">TYPE OF WORK</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">86</td>
+<td class="l data">USEEQUIP</td>
+<td class="r data">Num</td>
+<td class="l data">Do you now have any health problems that requires you to use special equipment, such as a cane, a wheelchair, a special bed, or a special telephone?</td>
+<td class="l data">USEEQUIP</td>
+</tr>
+<tr>
+<td class="r data">96</td>
+<td class="l data">USENOW3</td>
+<td class="r data">Num</td>
+<td class="l data">Do you currently use chewing tobacco, snuff, or snus every day, some days, or not at all?</td>
+<td class="l data">USE3NOW</td>
+</tr>
+<tr>
+<td class="r data">307</td>
+<td class="l data">VEGEDA1_</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED VEGETABLE INTAKE IN TIMES PER  DAY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">106</td>
+<td class="l data">VEGETAB1</td>
+<td class="r data">Num</td>
+<td class="l data">HOW MANY TIMES DID YOU EAT OTHER VEGETABLES?</td>
+<td class="l data">VEGE1TAB</td>
+</tr>
+<tr>
+<td class="r data">77</td>
+<td class="l data">VETERAN3</td>
+<td class="r data">Num</td>
+<td class="l data">Have you ever served on active duty in the United States Armed Forces, either in the regular military or in a National Guard or military reserve unit?</td>
+<td class="l data">VET3ERAN</td>
+</tr>
+<tr>
+<td class="r data">82</td>
+<td class="l data">WEIGHT2</td>
+<td class="r data">Num</td>
+<td class="l data">About how much do you weigh without shoes?</td>
+<td class="l data">WEIGHT</td>
+</tr>
+<tr>
+<td class="r data">370</td>
+<td class="l data">WHOPAIDT</td>
+<td class="r data">Num</td>
+<td class="l data">For your most recent work-related injury, who paid for your medical treatment?</td>
+<td class="l data">WHOPAIDT</td>
+</tr>
+<tr>
+<td class="r data">126</td>
+<td class="l data">WHRTST10</td>
+<td class="r data">Num</td>
+<td class="l data">LOCATION OF LAST HIV TEST</td>
+<td class="l data">WHR10TST</td>
+</tr>
+<tr>
+<td class="r data">288</td>
+<td class="l data">WTKG3</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED WEIGHT IN KILOGRAMS</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">73</td>
+<td class="l data">ZIPCODE</td>
+<td class="r data">Char</td>
+<td class="l data">What is your ZIP Code where you live?</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">283</td>
+<td class="l data">_AGE65YR</td>
+<td class="r data">Num</td>
+<td class="l data">REPORTED AGE IN TWO AGE GROUPS CALCULATED VARIABLE</td>
+<td class="l data">_AGE65YR</td>
+</tr>
+<tr>
+<td class="r data">284</td>
+<td class="l data">_AGE80</td>
+<td class="r data">Num</td>
+<td class="l data">IMPUTED AGE VALUE COLLAPSED ABOVE 80</td>
+<td class="l data">_AGE80F</td>
+</tr>
+<tr>
+<td class="r data">282</td>
+<td class="l data">_AGEG5YR</td>
+<td class="r data">Num</td>
+<td class="l data">REPORTED AGE IN FIVE-YEAR AGE CATEGORIES CALCULATED VARIABLE</td>
+<td class="l data">_AGEG5YR</td>
+</tr>
+<tr>
+<td class="r data">285</td>
+<td class="l data">_AGE_G</td>
+<td class="r data">Num</td>
+<td class="l data">IMPUTED AGE IN SIX GROUPS</td>
+<td class="l data">_AGE_G</td>
+</tr>
+<tr>
+<td class="r data">356</td>
+<td class="l data">_AIDTST3</td>
+<td class="r data">Num</td>
+<td class="l data">EVER BEEN TESTED FOR HIV CALCULATED VARIABLE</td>
+<td class="l data">_3AIDTST</td>
+</tr>
+<tr>
+<td class="r data">270</td>
+<td class="l data">_ASTHMS1</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED ASTHMA STATUS</td>
+<td class="l data">_1ASTHMS</td>
+</tr>
+<tr>
+<td class="r data">289</td>
+<td class="l data">_BMI5</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED BODY MASS INDEX</td>
+<td class="l data">_5BMI</td>
+</tr>
+<tr>
+<td class="r data">290</td>
+<td class="l data">_BMI5CAT</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED BODY MASS INDEX CATEGORIES</td>
+<td class="l data">_BMI5CAT</td>
+</tr>
+<tr>
+<td class="r data">269</td>
+<td class="l data">_CASTHM1</td>
+<td class="r data">Num</td>
+<td class="l data">CURRENT ASTHMA CALCULATED VARIABLE</td>
+<td class="l data">_1CASTHM</td>
+</tr>
+<tr>
+<td class="r data">203</td>
+<td class="l data">_CHISPNC</td>
+<td class="r data">Num</td>
+<td class="l data">CHILD HISPANIC, LATINO/A, OR SPANISH ORIGIN CALCULATED VARIABLE</td>
+<td class="l data">_CHISPNC</td>
+</tr>
+<tr>
+<td class="r data">292</td>
+<td class="l data">_CHLDCNT</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED NUMBER OF CHILDREN IN HOUSEHOLD</td>
+<td class="l data">_CHLDCNT</td>
+</tr>
+<tr>
+<td class="r data">265</td>
+<td class="l data">_CHOLCHK</td>
+<td class="r data">Num</td>
+<td class="l data">CHOLESTEROL CHECKED CALCULATED VARIABLE</td>
+<td class="l data">_CHOLCHK</td>
+</tr>
+<tr>
+<td class="r data">214</td>
+<td class="l data">_CLCM1V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 CHILD COMBINED LAND-LINE AND CELL-PHONE FIRST MARGIN (AGE-GENDER)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">215</td>
+<td class="l data">_CLCM2V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 CHILD COMBINED LAND-LINE AND CELL-PHONE SECOND MARGIN (RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">216</td>
+<td class="l data">_CLCM3V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 CHILD COMBINED LAND-LINE AND CELL-PHONE THIRD MARGIN (GENDER-RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">217</td>
+<td class="l data">_CLCM4V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 CHILD COMBINED LAND-LINE AND CELL-PHONE FOURTH MARGIN (AGE-RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">218</td>
+<td class="l data">_CLCM5V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 CHILD COMBINED LAND-LINE AND CELL-PHONE FIFTH MARGIN (TELEPHONE SOURCE)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">219</td>
+<td class="l data">_CLCWTV1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1  CHILD WEIGHT: LAND-LINE AND CELL-PHONE DATA</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">207</td>
+<td class="l data">_CPRACE</td>
+<td class="r data">Num</td>
+<td class="l data">PREFERRED CHILD RACE CATEGORIES</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">206</td>
+<td class="l data">_CRACE1</td>
+<td class="r data">Num</td>
+<td class="l data">CHILD NON-HISPANIC RACE INCLUDING MULTIRACIAL</td>
+<td class="l data">_C1RACE</td>
+</tr>
+<tr>
+<td class="r data">3</td>
+<td class="l data">_DENSTR2</td>
+<td class="r data">Num</td>
+<td class="l data">Household Density Stratum Code</td>
+<td class="l data">_2DENSTR</td>
+</tr>
+<tr>
+<td class="r data">271</td>
+<td class="l data">_DRDXAR1</td>
+<td class="r data">Num</td>
+<td class="l data">RESPONDENTS DIAGNOSED WITH ARTHRITIS</td>
+<td class="l data">_DRDX1AR</td>
+</tr>
+<tr>
+<td class="r data">300</td>
+<td class="l data">_DRNKWEK</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED NUMBER OF DRINKS OF ALCOHOL BEVERAGES PER WEEK</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">222</td>
+<td class="l data">_DUALCOR</td>
+<td class="r data">Num</td>
+<td class="l data">DUAL PHONE USE CORRECTION FACTOR</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">221</td>
+<td class="l data">_DUALUSE</td>
+<td class="r data">Num</td>
+<td class="l data">DUAL PHONE USE CATEGORIES</td>
+<td class="l data">_DUALUSE</td>
+</tr>
+<tr>
+<td class="r data">293</td>
+<td class="l data">_EDUCAG</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED LEVEL OF EDUCATION COMPLETED CATEGORIES</td>
+<td class="l data">_EDUCAG</td>
+</tr>
+<tr>
+<td class="r data">354</td>
+<td class="l data">_FLSHOT6</td>
+<td class="r data">Num</td>
+<td class="l data">FLU SHOT CALCULATED VARIABLE</td>
+<td class="l data">_6FLSHOT</td>
+</tr>
+<tr>
+<td class="r data">316</td>
+<td class="l data">_FRT16</td>
+<td class="r data">Num</td>
+<td class="l data">REPORTED CONSUMING FRUIT &gt;16/DAY</td>
+<td class="l data">_16FRT</td>
+</tr>
+<tr>
+<td class="r data">314</td>
+<td class="l data">_FRTLT1</td>
+<td class="r data">Num</td>
+<td class="l data">CONSUME FRUIT 1 OR MORE TIMES PER DAY</td>
+<td class="l data">_FRT1LT</td>
+</tr>
+<tr>
+<td class="r data">310</td>
+<td class="l data">_FRTRESP</td>
+<td class="r data">Num</td>
+<td class="l data">MISSING ANY FRUIT RESPONSES</td>
+<td class="l data">_FRTRESP</td>
+</tr>
+<tr>
+<td class="r data">318</td>
+<td class="l data">_FRUITEX</td>
+<td class="r data">Num</td>
+<td class="l data">FRUIT EXCLUSION FROM ANALYSES</td>
+<td class="l data">_FRUITEX</td>
+</tr>
+<tr>
+<td class="r data">312</td>
+<td class="l data">_FRUTSUM</td>
+<td class="r data">Num</td>
+<td class="l data">TOTAL FRUITS CONSUMED PER DAY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">2</td>
+<td class="l data">_GEOSTR</td>
+<td class="r data">Num</td>
+<td class="l data">Geographic Stratum Code</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">263</td>
+<td class="l data">_HCVU651</td>
+<td class="r data">Num</td>
+<td class="l data">RESPONDENTS AGED 18-64 WITH HEALTH CARE COVERAGE</td>
+<td class="l data">_HCV165U</td>
+</tr>
+<tr>
+<td class="r data">277</td>
+<td class="l data">_HISPANC</td>
+<td class="r data">Num</td>
+<td class="l data">HISPANIC, LATINO/A, OR SPANISH ORIGIN CALCULATED VARIABLE</td>
+<td class="l data">_HISPANC</td>
+</tr>
+<tr>
+<td class="r data">195</td>
+<td class="l data">_IMPAGE</td>
+<td class="r data">Num</td>
+<td class="l data">Imputed age used in post-stratification</td>
+<td class="l data">_IMPAGE</td>
+</tr>
+<tr>
+<td class="r data">208</td>
+<td class="l data">_IMPCAGE</td>
+<td class="r data">Num</td>
+<td class="l data">IMPUTED CHILD AGE</td>
+<td class="l data">_IMPCAGE</td>
+</tr>
+<tr>
+<td class="r data">209</td>
+<td class="l data">_IMPCRAC</td>
+<td class="r data">Num</td>
+<td class="l data">Imputed Child Race/Ethnicity</td>
+<td class="l data">_IMPCRAC</td>
+</tr>
+<tr>
+<td class="r data">210</td>
+<td class="l data">_IMPCSEX</td>
+<td class="r data">Num</td>
+<td class="l data">IMPUTED CHILD GENDER</td>
+<td class="l data">_IMPCSEX</td>
+</tr>
+<tr>
+<td class="r data">198</td>
+<td class="l data">_IMPCTY</td>
+<td class="r data">Num</td>
+<td class="l data">IMPUTED COUNTY</td>
+<td class="l data">CTYCODE1F</td>
+</tr>
+<tr>
+<td class="r data">199</td>
+<td class="l data">_IMPEDUC</td>
+<td class="r data">Num</td>
+<td class="l data">IMPUTED EDUCATION LEVEL</td>
+<td class="l data">_IMPEDUC</td>
+</tr>
+<tr>
+<td class="r data">201</td>
+<td class="l data">_IMPHOME</td>
+<td class="r data">Num</td>
+<td class="l data">IMPUTED RENT OR OWN HOME STATUS</td>
+<td class="l data">_IMPHOME</td>
+</tr>
+<tr>
+<td class="r data">200</td>
+<td class="l data">_IMPMRTL</td>
+<td class="r data">Num</td>
+<td class="l data">IMPUTED MARITAL STATUS</td>
+<td class="l data">_IMPMRTL</td>
+</tr>
+<tr>
+<td class="r data">197</td>
+<td class="l data">_IMPNPH</td>
+<td class="r data">Num</td>
+<td class="l data">IMPUTED NUMBER OF PHONES</td>
+<td class="l data">_IMPNPH</td>
+</tr>
+<tr>
+<td class="r data">196</td>
+<td class="l data">_IMPRACE</td>
+<td class="r data">Num</td>
+<td class="l data">IMPUTED RACE/ETHNICITY VALUE</td>
+<td class="l data">_IMPRACE</td>
+</tr>
+<tr>
+<td class="r data">294</td>
+<td class="l data">_INCOMG</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED INCOME CATEGORIES</td>
+<td class="l data">_INCOMG</td>
+</tr>
+<tr>
+<td class="r data">240</td>
+<td class="l data">_LCM01V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 COMBINED LAND-LINE AND CELL-PHONE FIRST MARGIN (AGE-GENDER)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">249</td>
+<td class="l data">_LCM01V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE FIRST MARGIN (AGE-GENDER)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">241</td>
+<td class="l data">_LCM02V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 COMBINED LAND-LINE AND CELL-PHONE SECOND MARGIN (RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">250</td>
+<td class="l data">_LCM02V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE SECOND MARGIN (RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">242</td>
+<td class="l data">_LCM03V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 COMBINED LAND-LINE AND CELL-PHONE THIRD MARGIN (EDUCATION)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">251</td>
+<td class="l data">_LCM03V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE THIRD MARGIN (EDUCATION)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">243</td>
+<td class="l data">_LCM04V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 COMBINED LAND-LINE AND CELL-PHONE FOURTH MARGIN (MARITAL STATUS)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">252</td>
+<td class="l data">_LCM04V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE FOURTH MARGIN (MARITAL STATUS)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">244</td>
+<td class="l data">_LCM05V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 COMBINED LAND-LINE AND CELL-PHONE FIFTH MARGIN (HOME OWNERSHIP)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">253</td>
+<td class="l data">_LCM05V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE FIFTH MARGIN (HOME OWNERSHIP)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">245</td>
+<td class="l data">_LCM06V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 COMBINED LAND-LINE AND CELL-PHONE SIXTH MARGIN (GENDER-RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">254</td>
+<td class="l data">_LCM06V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE SIXTH MARGIN (GENDER-RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">246</td>
+<td class="l data">_LCM07V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 COMBINED LAND-LINE AND CELL-PHONE SEVENTH MARGIN (AGE-RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">255</td>
+<td class="l data">_LCM07V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE SEVENTH MARGIN (AGE-RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">247</td>
+<td class="l data">_LCM08V1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 COMBINED LAND-LINE AND CELL-PHONE EIGHTH MARGIN (TELEPHONE SOURCE)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">256</td>
+<td class="l data">_LCM08V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE EIGHTH MARGIN (TELEPHONE SOURCE)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">257</td>
+<td class="l data">_LCM09V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE NINTH MARGIN (REGIONS)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">258</td>
+<td class="l data">_LCM10V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE TENTH MARGIN (REGIONS-AGE)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">259</td>
+<td class="l data">_LCM11V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE ELEVENTH MARGIN (REGIONS-GENDER)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">260</td>
+<td class="l data">_LCM12V2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 COMBINED LAND-LINE AND CELL-PHONE TWELFTH MARGIN (REGIONS-RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">248</td>
+<td class="l data">_LCPWTV1</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 1 WEIGHT: LAND-LINE AND CELL-PHONE DATA</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">261</td>
+<td class="l data">_LCPWTV2</td>
+<td class="r data">Num</td>
+<td class="l data">VERSION 2 WEIGHT: LAND-LINE AND CELL-PHONE DATA</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">223</td>
+<td class="l data">_LLCPM01</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE FIRST MARGIN (AGE-GENDER)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">224</td>
+<td class="l data">_LLCPM02</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE SECOND MARGIN (RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">225</td>
+<td class="l data">_LLCPM03</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE THIRD MARGIN (EDUCATION)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">226</td>
+<td class="l data">_LLCPM04</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE FOURTH MARGIN (MARITAL STATUS)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">227</td>
+<td class="l data">_LLCPM05</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE FIFTH MARGIN (HOME OWNERSHIP)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">228</td>
+<td class="l data">_LLCPM06</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE SIXTH MARGIN (GENDER-RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">229</td>
+<td class="l data">_LLCPM07</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE SEVENTH MARGIN (AGE-RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">230</td>
+<td class="l data">_LLCPM08</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE EIGHTH MARGIN (TELEPHONE SOURCE)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">231</td>
+<td class="l data">_LLCPM09</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE NINTH MARGIN (REGIONS)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">232</td>
+<td class="l data">_LLCPM10</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE TENTH MARGIN (REGIONS-AGE)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">233</td>
+<td class="l data">_LLCPM11</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE ELEVENTH MARGIN (REGIONS-GENDER)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">234</td>
+<td class="l data">_LLCPM12</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE TWELFTH MARGIN (REGIONS-RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">235</td>
+<td class="l data">_LLCPM13</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE THIRTEENTH MARGIN (COUNTIES)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">236</td>
+<td class="l data">_LLCPM14</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE FOURTEENTH MARGIN (COUNTIES-RACE/ETHNICITY)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">237</td>
+<td class="l data">_LLCPM15</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE FIFTEENTH MARGIN (COUNTIES-AGE)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">238</td>
+<td class="l data">_LLCPM16</td>
+<td class="r data">Num</td>
+<td class="l data">COMBINED LAND-LINE AND CELL-PHONE SIXTEENTH MARGIN (COUNTIES-SEX)</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">239</td>
+<td class="l data">_LLCPWT</td>
+<td class="r data">Num</td>
+<td class="l data">FINAL WEIGHT: LAND-LINE AND CELL-PHONE DATA</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">349</td>
+<td class="l data">_LMTACT1</td>
+<td class="r data">Num</td>
+<td class="l data">LIMITED USUAL ACTIVITIES</td>
+<td class="l data">_LMT1ACT</td>
+</tr>
+<tr>
+<td class="r data">351</td>
+<td class="l data">_LMTSCL1</td>
+<td class="r data">Num</td>
+<td class="l data">LIMITED SOCIAL ACTIVITIES</td>
+<td class="l data">_LMT1SCL</td>
+</tr>
+<tr>
+<td class="r data">350</td>
+<td class="l data">_LMTWRK1</td>
+<td class="r data">Num</td>
+<td class="l data">LIMITED WORK ACTIVITIES</td>
+<td class="l data">_LMT1WRK</td>
+</tr>
+<tr>
+<td class="r data">268</td>
+<td class="l data">_LTASTH1</td>
+<td class="r data">Num</td>
+<td class="l data">LIFETIME ASTHMA CALCULATED VARIABLE</td>
+<td class="l data">_1LTASTH</td>
+</tr>
+<tr>
+<td class="r data">267</td>
+<td class="l data">_MICHD</td>
+<td class="r data">Num</td>
+<td class="l data">RESPONDENTS THAT HAVE EVER REPORTED HAVING CORONARY HEART DISEASE (CHD) OR MYOCARDIAL INFARCTION (MI</td>
+<td class="l data">_MICHD</td>
+</tr>
+<tr>
+<td class="r data">331</td>
+<td class="l data">_MINAC11</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OF PHYSICAL ACTIVITY PER WEEK FOR FIRST ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">332</td>
+<td class="l data">_MINAC21</td>
+<td class="r data">Num</td>
+<td class="l data">MINUTES OF PHYSICAL ACTIVITY PER WEEK FOR SECOND ACTIVITY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">308</td>
+<td class="l data">_MISFRTN</td>
+<td class="r data">Num</td>
+<td class="l data">THE NUMBER OF MISSING FRUIT RESPONSES</td>
+<td class="l data">_MISFRTN</td>
+</tr>
+<tr>
+<td class="r data">309</td>
+<td class="l data">_MISVEGN</td>
+<td class="r data">Num</td>
+<td class="l data">THE NUMBER OF MISSING VEGETABLE RESPONSES</td>
+<td class="l data">_MISVEGN</td>
+</tr>
+<tr>
+<td class="r data">275</td>
+<td class="l data">_MRACE1</td>
+<td class="r data">Num</td>
+<td class="l data">CALCULATED NON-HISPANIC RACE INCLUDING MULTIRACIAL</td>
+<td class="l data">_M1RACE</td>
+</tr>
+<tr>
+<td class="r data">186</td>
+<td class="l data">_MSACODE</td>
+<td class="r data">Char</td>
+<td class="l data">METROPOLITAN STATISTICAL AREA CODE.</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">276</td>
+<td class="l data">_M_RACE</td>
+<td class="r data">Num</td>
+<td class="l data">CALCULATED NON-HISPANIC RACE INCLUDING MULTIRACIAL</td>
+<td class="l data">_M_RACE</td>
+</tr>
+<tr>
+<td class="r data">343</td>
+<td class="l data">_PA150R2</td>
+<td class="r data">Num</td>
+<td class="l data">150 MINUTE PHYSICAL ACTIVITY CALCULATED VARIABLE</td>
+<td class="l data">_2PA150R</td>
+</tr>
+<tr>
+<td class="r data">345</td>
+<td class="l data">_PA30021</td>
+<td class="r data">Num</td>
+<td class="l data">300 MINUTE PHYSICAL ACTIVITY 2-LEVEL CALCULATED VARIABLE</td>
+<td class="l data">_30021PA</td>
+</tr>
+<tr>
+<td class="r data">344</td>
+<td class="l data">_PA300R2</td>
+<td class="r data">Num</td>
+<td class="l data">300 MINUTE PHYSICAL ACTIVITY CALCULATED VARIABLE</td>
+<td class="l data">_2PA300R</td>
+</tr>
+<tr>
+<td class="r data">341</td>
+<td class="l data">_PACAT1</td>
+<td class="r data">Num</td>
+<td class="l data">PHYSICAL ACTIVITY CATEGORIES</td>
+<td class="l data">_PA1CAT</td>
+</tr>
+<tr>
+<td class="r data">342</td>
+<td class="l data">_PAINDX1</td>
+<td class="r data">Num</td>
+<td class="l data">PHYSICAL ACTIVITY INDEX</td>
+<td class="l data">_PA1INDX</td>
+</tr>
+<tr>
+<td class="r data">347</td>
+<td class="l data">_PAREC1</td>
+<td class="r data">Num</td>
+<td class="l data">AEROBIC AND STRENGTHENING GUIDELINE</td>
+<td class="l data">_PA1REC</td>
+</tr>
+<tr>
+<td class="r data">348</td>
+<td class="l data">_PASTAE1</td>
+<td class="r data">Num</td>
+<td class="l data">AEROBIC AND STRENGTHENING (2-LEVEL)</td>
+<td class="l data">_PA1ATAE</td>
+</tr>
+<tr>
+<td class="r data">346</td>
+<td class="l data">_PASTRNG</td>
+<td class="r data">Num</td>
+<td class="l data">MUSCLE STRENGTHENING RECOMMENDATION</td>
+<td class="l data">_PASTRNG</td>
+</tr>
+<tr>
+<td class="r data">355</td>
+<td class="l data">_PNEUMO2</td>
+<td class="r data">Num</td>
+<td class="l data">PNEUMONIA VACCINATION CALCULATED VARIABLE</td>
+<td class="l data">_2PNEUMO</td>
+</tr>
+<tr>
+<td class="r data">274</td>
+<td class="l data">_PRACE1</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED PREFERRED RACE</td>
+<td class="l data">_P1RACE</td>
+</tr>
+<tr>
+<td class="r data">16</td>
+<td class="l data">_PSU</td>
+<td class="r data">Num</td>
+<td class="l data">Primary Sampling Unit</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">278</td>
+<td class="l data">_RACE</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED RACE-ETHNICITY GROUPING</td>
+<td class="l data">_RACE</td>
+</tr>
+<tr>
+<td class="r data">279</td>
+<td class="l data">_RACEG21</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED NON-HISPANIC WHITES/ALL OTHERS RACE CATEGORIES RACE/ETHNIC GROUP CODES USED IN POST-STRATIF</td>
+<td class="l data">_21RACEG</td>
+</tr>
+<tr>
+<td class="r data">280</td>
+<td class="l data">_RACEGR3</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED FIVE LEVEL RACE/ETHNICITY CATEGORY.</td>
+<td class="l data">_3RACEGR</td>
+</tr>
+<tr>
+<td class="r data">281</td>
+<td class="l data">_RACE_G1</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED RACE GROUPS USED FOR INTERNET PREVALENCE TABLES</td>
+<td class="l data">_RACE1_G</td>
+</tr>
+<tr>
+<td class="r data">190</td>
+<td class="l data">_RAW</td>
+<td class="r data">Num</td>
+<td class="l data">RAW WEIGHTING FACTOR</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">211</td>
+<td class="l data">_RAWCH</td>
+<td class="r data">Num</td>
+<td class="l data">RAW CHILD WEIGHTING FACTOR</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">192</td>
+<td class="l data">_RAWRAKE</td>
+<td class="r data">Num</td>
+<td class="l data">RAW WEIGHTING FACTOR USED IN RAKING</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">194</td>
+<td class="l data">_REGION</td>
+<td class="r data">Num</td>
+<td class="l data">Region, Geographic Stratification areas</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">299</td>
+<td class="l data">_RFBING5</td>
+<td class="r data">Num</td>
+<td class="l data">BINGE DRINKING CALCULATED VARIABLE</td>
+<td class="l data">_5RFBING</td>
+</tr>
+<tr>
+<td class="r data">291</td>
+<td class="l data">_RFBMI5</td>
+<td class="r data">Num</td>
+<td class="l data">OVERWEIGHT OR OBESE CALCULATED VARIABLE</td>
+<td class="l data">_5RFBMI</td>
+</tr>
+<tr>
+<td class="r data">266</td>
+<td class="l data">_RFCHOL</td>
+<td class="r data">Num</td>
+<td class="l data">HIGH CHOLESTEROL CALCULATED VARIABLE</td>
+<td class="l data">_RFCHOL</td>
+</tr>
+<tr>
+<td class="r data">301</td>
+<td class="l data">_RFDRHV5</td>
+<td class="r data">Num</td>
+<td class="l data">HEAVY ALCOHOL CONSUMPTION  CALCULATED VARIABLE</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">262</td>
+<td class="l data">_RFHLTH</td>
+<td class="r data">Num</td>
+<td class="l data">ADULTS WITH GOOD OR BETTER HEALTH</td>
+<td class="l data">_RFHLTH</td>
+</tr>
+<tr>
+<td class="r data">264</td>
+<td class="l data">_RFHYPE5</td>
+<td class="r data">Num</td>
+<td class="l data">HIGH BLOOD PRESSURE CALCULATED VARIABLE</td>
+<td class="l data">_5RFHYPE</td>
+</tr>
+<tr>
+<td class="r data">352</td>
+<td class="l data">_RFSEAT2</td>
+<td class="r data">Num</td>
+<td class="l data">ALWAYS OR NEARLY ALWAYS WEAR SEAT BELTS</td>
+<td class="l data">_2RFSEAT</td>
+</tr>
+<tr>
+<td class="r data">353</td>
+<td class="l data">_RFSEAT3</td>
+<td class="r data">Num</td>
+<td class="l data">ALWAYS WEAR SEAT BELTS</td>
+<td class="l data">_3RFSEAT</td>
+</tr>
+<tr>
+<td class="r data">296</td>
+<td class="l data">_RFSMOK3</td>
+<td class="r data">Num</td>
+<td class="l data">CURRENT SMOKING CALCULATED VARIABLE</td>
+<td class="l data">_3RFSMOK</td>
+</tr>
+<tr>
+<td class="r data">295</td>
+<td class="l data">_SMOKER3</td>
+<td class="r data">Num</td>
+<td class="l data">COMPUTED SMOKING STATUS</td>
+<td class="l data">_3SMOKER</td>
+</tr>
+<tr>
+<td class="r data">1</td>
+<td class="l data">_STATE</td>
+<td class="r data">Num</td>
+<td class="l data">State FIPS Code</td>
+<td class="l data">_STATE</td>
+</tr>
+<tr>
+<td class="r data">189</td>
+<td class="l data">_STRWT</td>
+<td class="r data">Num</td>
+<td class="l data">STRATUM WEIGHT</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">188</td>
+<td class="l data">_STSTR</td>
+<td class="r data">Num</td>
+<td class="l data">SAMPLE DESIGN STRATIFICATION VARIABLE</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">320</td>
+<td class="l data">_TOTINDA</td>
+<td class="r data">Num</td>
+<td class="l data">LEISURE TIME PHYSICAL ACTIVITY CALCULATED VARIABLE</td>
+<td class="l data">_TOTINDA</td>
+</tr>
+<tr>
+<td class="r data">317</td>
+<td class="l data">_VEG23</td>
+<td class="r data">Num</td>
+<td class="l data">REPORTED CONSUMING VEGETABLES &gt;23/DAY</td>
+<td class="l data">_23VEG</td>
+</tr>
+<tr>
+<td class="r data">313</td>
+<td class="l data">_VEGESUM</td>
+<td class="r data">Num</td>
+<td class="l data">TOTAL VEGETABLES CONSUMED PER DAY</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">319</td>
+<td class="l data">_VEGETEX</td>
+<td class="r data">Num</td>
+<td class="l data">VEGETABLE EXCLUSION FROM ANALYSES</td>
+<td class="l data">_VEGETEX</td>
+</tr>
+<tr>
+<td class="r data">315</td>
+<td class="l data">_VEGLT1</td>
+<td class="r data">Num</td>
+<td class="l data">CONSUME VEGETABLES 1 OR MORE TIMES PER DAY</td>
+<td class="l data">_VEG1LT</td>
+</tr>
+<tr>
+<td class="r data">311</td>
+<td class="l data">_VEGRESP</td>
+<td class="r data">Num</td>
+<td class="l data">MISSING ANY VEGETABLE RESPONSES</td>
+<td class="l data">_VEGRESP</td>
+</tr>
+<tr>
+<td class="r data">191</td>
+<td class="l data">_WT2</td>
+<td class="r data">Num</td>
+<td class="l data">DESIGN WEIGHT</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">212</td>
+<td class="l data">_WT2CH</td>
+<td class="r data">Num</td>
+<td class="l data">CHILD DESIGN WEIGHT</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">193</td>
+<td class="l data">_WT2RAKE</td>
+<td class="r data">Num</td>
+<td class="l data">DESIGN WEIGHT USED IN RAKING</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<td class="r data">404</td>
+<td class="l data">dsripreg</td>
+<td class="r data">Num</td>
+<td class="l data">DSRIP Region</td>
+<td class="l data">DSRIPREG</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="l systemfooter">09.09.2016</td>
+</tr>
+</table><br>
+</div>
+</body>
+</html>
